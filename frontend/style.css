@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.task-form, .task-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1e40af;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.task-card {
+    border: 1px solid #e5e7eb;
+    padding: 18px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    background: #fafafa;
+}
+
+.task-card h3 {
+    margin-bottom: 8px;
+}
+
+.task-card p {
+    margin-bottom: 8px;
+}
+
+.task-card button {
+    margin: 8px 5px 0 0;
+}
+/* Dashboard Statistics */
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #2563eb;
+}
+
+.stat-card h3 {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    color: #2563eb;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Responsive Dashboard */
+
+@media (max-width: 700px) {
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+}
